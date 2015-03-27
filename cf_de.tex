@@ -1,10 +1,13 @@
+% !TeX spellcheck = de_DE
+
 \documentclass[skip,a4paper]{article}
 
 \include{include}	
-
-\def\subject{CV Olivier CHURLAUD}
-\def\title{CV Olivier CHURLAUD}
+\usepackage[german]{babel}
+\def\subject{Olivier CHURLAUD - Lebenslauf}
+\def\title{Olivier CHURLAUD - Lebenslauf}
 \def\author{Olivier CHURLAUD}
+\def\place{Berlin}
 
 \makeatletter
 	\definecolor{redcv}{HTML}{C5000B}
@@ -38,11 +41,15 @@
 			\footnotesize
 			\item[\bfseries @] \url{olivier@churlaud.com}
 			\item[\bfseries \color{blue} in] {\scriptsize\url{ fr.linkedin.com/in/olivierchurlaud/}}
-			\item[\Telefon]+33 (0)6 98 29 02 52
-			\item[\Letter] 12, place du grand four \\
-			79 370 MOUGON \\ 
-			FRANCE
-			\item[$\bullet$] né le 07 avril 1992
+			\item[\Telefon]+49 (0)157 52931348
+			\item[\Letter] Weitlingstr. 101 \\
+			10 317 BERLIN \\ 
+			DEUTSCHLAND
+			10 317 BERLIN
+			\item[$\bullet$] Geburtsdatum: 07.04.1992
+			\itemsep -2pt
+			\item[$\bullet$] Familienstand: Ledig
+			\item[$\bullet$] Atheist
 		\end{itemize}
 	\end{minipage}
 	\begin{minipage}[c][4cm]{10cm}
@@ -59,9 +66,9 @@
 		\centering
 		{
 			\setlength{\parskip}{10pt plus 1pt minus 1pt}
-			{\LARGE \'Elève Ingénieur}
+			{\LARGE Studentischer Mitarbeiter}
 			
-			{\Large Spécialité traitement du signal et de l'information}
+			{\large Masterstudent im Bereich \textit{Digitale Nachrichtübertragung} und \textit{Signalverarbeitung}}
 		}
 	\end{minipage}
 \end{minipage}
@@ -72,77 +79,89 @@
 	\hfill
 	\begin{minipage}{\scale\linewidth}
 	~
-		\section*{\'Etudes}
+		\section*{Schulausbildung und Studium}
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{2014 -- 2016}{TU Berlin : Master Elektrotechnik}
-			\itemcv{2012 -- 2016}{École Centrale de Lyon : Préparation du diplôme d'ingénieur généraliste}
-			\itemcv{2010 -- 2012}{Classe préparatoire Maths-Physiques (MP) au Lycée Pierre de Fermat de Toulouse (31)}
+			\itemcv{2014 -- 2016}{
+					\textbf{Doppel Diplom an der TU Berlin: M.Sc. Elektrotechnik}\\
+					Studienschwerpunkte: Kommunikationssysteme, Codierungstheorie, Nachrichtübertragung
+				}
+			\itemcv{2012 -- 2016}{
+					 \textbf{Hauptstudium an der \'Ecole Centrale de Lyon: Ingenieur Grande \'Ecole für Generalisten}\\
+					 Studienschwerpunkte: Informatik und Elektronik
+				}
+			\itemcv{2010 -- 2012}{
+					 \textbf{Vorbereitungsklasse für die Aufnahme an eine Grande \'Ecole}: Selektive Aufnahmeprüfung
+				}
 		\end{tabular}
 		
-		\section*{Expériences}
-		\subsection*{Direction de projets}
+		\section*{Erfahrungen}
+		\subsection*{Projektführung}
 		
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
 			\itemcv{2013 -- 2014}{
-				\textbf{Projet de Recherche : Conception et création d'un module de transmission WPAN-WLAN} \\
-				Collaboration avec le laboratoire INL (Lyon) \\
-				\textit{Programmation C -- Conception KICAD -- Microcontrôleurs Microchip}
-			}
+					\textbf{Forschungsprojekt: Entwicklung eines Kommunikationsmoduls WPAN-WLAN} \\
+					Zusammenarbeit mit dem Labor INL (Lyon) \\
+					\textit{C Programmierung -- KICAD -- Microchip Mikrocontrollers}
+				}
 			\itemcv{2012 -- 2013}{
-				\textbf{Président de l'association ECLAIR} (association loi 1901 gérant l'informatique et le réseau de l'École Centrale de Lyon : 700 utilisateurs) : Mise en place d'un Cloud, Conception d'un méta-site interne pour les élèves et anciens élèves
+				\textbf{Vorsitzender des gemeinnütziger Vereins ECLAIR} \\
+				Verein, der die Informatik und das Netzwerk des Campus verwaltet
 			}
 			\itemcv{~}{
-				\textbf{Projet d’Étude : Création d'un outil de mesure des champs magnétiques de basse fréquence} \\
-				Collaboration avec le Laboratoire Ampère (Lyon) \\
-				\textit{Programmation MATLAB -- Mise en œuvre d'un magnétomètre}
+				\textbf{Schulprojekt : Erstellung eines Messgerätes um Niederfrequenzfelder zu messen} \\
+				Zusammenarbeit mit dem Labor Ampère (Lyon) \\
+				\textit{MATLAB Programmierung / Anwendung eines Magnetometer}
 			}
-			\itemcv{2009 -- 2010}{
-				\textbf{Projet de recherche en physique des particules en partenariat avec le CERN et l'IN2P3} \\
-				Projet soutenu aux Olympiades de Physiques (1\ier prix), aux Faites de la Science (1\ier prix) \\
-				\textit{Expérimentations -- Vulgarisation -- Conception d'un jeu de plateau sur le thème du LHC}
+			\itemcv{2009-2010}{
+				\textbf{Forschungsproject in Teilchenphysik mit CERN und IN2P3}
+				2 mal den ersten Preis in der wissenschaftlichen Aufnahmeprüfung gewonnen
+				\textit{Experimente / Populärwissenschaftliche Darstellungen}
 			}
+			
 			\itemcv{2008 -- 2009}{
 				\textbf{Projet d'Atelier d'écriture en partenariat avec l'OuLiPo} (Ouvroir de Littérature Potentielle : groupement	d'écrivains qui travaille en se choisissant des contraintes de fond et de forme)
 			}
 		\end{tabular}
-		
-		\subsection*{Expériences professionnelles}
+				
+		\subsection*{Berufspraktische Erfahrungen}
 		
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{2014}{
-				\textbf{Stage d'application : Télécom Bretagne, avec F.P. Andriulli} -- Analyse et développement de techniques et d'outils	expérimentaux et computationnels pour l'imagerie cérébrale par encéphalogramme
-			}
-			\itemcv{2013}{
-				Stage ouvrier : \textbf{SNCF} - maintenance de locomotives BB26000 (Technicentre SNCF Oullins)
-			}
-			\itemcv{2010 et 2011}{
-				Emploi saisonnier : manutention dans une entreprise de déménagement (BIARDEAU SARL, à Niort)
+			\itemcv{Mai-Aug. 2014}{
+				\textbf{Forschungpraktikum mit Francesco P. Andriulli (Telecom Bretagne)}\\
+				Analyse und Entwicklung von Techniken für Experimente und Computation für EEG.
 			}
 		\end{tabular}
 
-		\section*{Compétences}
-		
+		\section*{Besondere Fähigkeiten}
+
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{Management}{Chef de projet, coordination d'équipes, lien entre administration et équipe}
-			\itemcv{Électronique}{Programmation de microcontrôleurs Microchip, cartes électroniques de communication WPAN/WLAN}
-			\itemcv{Informatique}{
-				Programmation, Machine Learning --
-				\textbf{Internet} HTML5, CSS, PHP, MySQL, Symfony2 -- \textbf{Administration système et réseaux} Linux, Bridging, VLAN, Virtualisation KVM, Apache2 -- \textbf{Programme} MS Access, MATLAB, C/C++, Python, \LaTeX
+			\itemcv{Management}{Projekt Führer, Team Koordination}
+			\itemcv{Elektrotechnik}{Informationstheorie, Codierungstheorie (Quellen- und Kanalcodierung), Signalverarbeitung}
+			\itemcv{Informatik}{
+				Programmierung, Machine Learning -- \textbf{Nerzwerkverwaltung} Linux, Bridging, VLAN, Virtualisierung KVM, Apache2 -- \textbf{Programmierung} MATLAB, C/C++, MySQL, Python, \LaTeX
 			}
-			\itemcv{Langues}{
-				\textbf{Anglais} (Lu, écrit, parlé : TOEFL 613pts) \\
-				\textbf{Allemand} (Lu, écrit, parlé : Certificat de niveau B2 en allemand en 2014 {\scriptsize(Système de notation Européen)})
+			\itemcv{Sprache}{
+				\textbf{Französisch} (Muttersprache), \textbf{Englisch} (sehr gut Kenntnisse: 12 Jahre), \textbf{Deutsch} (Niveau B2 das
+				europäischen Referenznahmens: 12 Jahre, Seit 8 Monate in Berlin)
 			}
+			\itemcv{Andere}{Führerschein Klasse B}
 		\end{tabular}
 		
-		\section*{Centres d’intérêt}
-		
+		\section*{Freizeitbeschäftigen}
+				
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{Culturel}{Littérature : littérature classique du XIX-XXe siècle et Nouveau Roman}
-			\itemcv{~}{Musique, Cinéma : Cinéma d'auteur et des années 40-50}
-			\itemcv{Sport}{Sports de montagne : ski, escalade, randonnée}
+			\itemcv{Kultur}{Literatur (Klassische Literatur und Nouveau Roman)}
+			\itemcv{}{Musik, Kino (Autorenfilme und Filme aus dem Vierziger und Fünfziger Jahren)}
+			\itemcv{Sport}{Gebirgssports (Ski, Klettern, Wanderung)}
 	\end{tabular}
 	\end{minipage}
 \end{minipage}
 \vfill
+\begin{minipage}[t][50pt]{150pt}
+	 \vspace{0pt}
+	 \place, den \today,
+\end{minipage}
+\begin{minipage}[t]{200pt}
+	 \vspace{0pt}\includegraphics[width=100pt]{img/signature.png}
+\end{minipage}
 \end{document}
