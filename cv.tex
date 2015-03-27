@@ -1,65 +1,20 @@
 \documentclass[skip,a4paper]{article}
-\usepackage{ucs}
-\usepackage[utf8x]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{graphicx}
-\usepackage{ulem} % option included for minimum surprise
-\usepackage[francais]{babel}
-\usepackage[top=1cm,bottom=1cm,right=2cm,left=1cm]{geometry}
-\usepackage{titlesec}
-\usepackage{hyperref}
-\usepackage{url}
-\usepackage{array}
-\usepackage{marvosym}
-\usepackage{tikz}
 
-%-----Liens PDF-----%
-\hypersetup{
-	%backref=true, %permet d'ajouter des liens dans...
-	%pagebackref=true,%...les bibliographies
-	%hyperindex=true, %ajoute des liens dans les index.
-	colorlinks=true, %colorise les liens
-	breaklinks=true, %permet le retour à la ligne dans les liens trop longs
-	urlcolor=black, %couleur des hyperliens
-	linkcolor=black, %couleur des liens internes
-	%bookmarks=true, %créé des signets pour Acrobat
-	%bookmarksopen=true, %si les signets Acrobat sont créés,
-	%les afficher complètement.
-	pdftitle={CV Olivier CHURLAUD}, %informations apparaissant dans
-	pdfauthor={Olivier CHURLAUD}, %dans les informations du document
-	pdfsubject={CV Olivier CHURLAUD} %sous Acrobat.
-}
+\def\subject{CV Olivier CHURLAUD}
+\def\title{CV Olivier CHURLAUD}
+\def\author{Olivier CHURLAUD}
+
+\include{include}	
 
 \makeatletter
-
-\pagestyle{empty}
-\definecolor{redcv}{HTML}{C5000B}
-\definecolor{graycv}{HTML}{666666}
-\def\scale{0.94}
-\def\descripscale{0.8}
-\def\datescale{0.13}
-\renewcommand{\arraystretch}{1.7}
-
-\def\UrlFont{\em}
-
-\titleformat{\section}{\LARGE\bfseries\color{redcv}}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
-
-\renewcommand\subsection{\@startsection{subsection}{2}{50px}%niveau toc / indentation
-	{-30.5ex \@plus -1ex \@minus -.2ex}%
-	{2.3ex \@plus.2ex}%
-	{\reset@font\Large\bfseries}}
-
-\newcommand{\itemcv}[2]{
-		\textbf{\color{graycv}#1} & #2 \tabularnewline
-	}
-	
-\newcolumntype{P}[1]{>{\raggedright}p{#1}}
+	\definecolor{redcv}{HTML}{C5000B}
+	\definecolor{graycv}{HTML}{666666}
+	\def\scale{0.94}
+	\def\descripscale{0.8}
+	\def\datescale{0.13}
+	\renewcommand{\arraystretch}{1.7}
 \makeatother
+
 \begin{document}
 	\fontsize{8.5}{9.5}
 	\selectfont
