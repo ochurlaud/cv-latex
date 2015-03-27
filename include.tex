@@ -8,7 +8,7 @@
 \usepackage[top=1cm,bottom=1cm,right=2cm,left=1cm]{geometry}
 \usepackage{titlesec}
 \usepackage{array}
-
+\usepackage{enumitem}
 %% URLs
 \usepackage{hyperref}
 \usepackage{url}
@@ -25,6 +25,17 @@
 \usepackage[default,osfigures,scale=0.95]{opensans}
 % Symbols
 \usepackage{marvosym}
+
+\def\subject{cv}
+\def\title{cv}
+\def\author{author}
+
+\definecolor{redcv}{HTML}{C5000B}
+\definecolor{graycv}{HTML}{666666}
+\def\scale{0.94}
+\def\descripscale{0.8}
+\def\datescale{0.13}
+\renewcommand{\arraystretch}{1.7}
 
 %-----Liens PDF-----%
 \hypersetup{
@@ -46,28 +57,16 @@
 \makeatletter
 
 \pagestyle{empty}
-\def\subject{cv}
-\def\title{cv}
-\def\author{author}
-
-\definecolor{redcv}{HTML}{C5000B}
-\definecolor{graycv}{HTML}{666666}
-\def\scale{0.94}
-\def\descripscale{0.8}
-\def\datescale{0.13}
-\renewcommand{\arraystretch}{1.7}
 
 \def\UrlFont{\em} % url are `em`, and `em` is underlined with ulem
 
 \titleformat{\section}{\LARGE\bfseries\color{redcv}}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
-\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
 
-\titlespacing*{\subsection}
-{50pt}{15.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+\titlespacing*{\section}{0pt}{2ex plus 0.4ex minus .2ex}{1.3ex plus .2ex}
+\titlespacing*{\subsection}{50pt}{2ex plus 0.4ex minus -0.2ex}{0.5ex plus .2ex}
 
-\newcommand{\itemcv}[2]{
-		\textbf{\color{graycv}#1} & #2 \tabularnewline
-	}
+\newcommand{\itemcv}[2]{\textbf{\color{graycv}#1} & #2 \tabularnewline}
 	
 \newcolumntype{P}[1]{>{\raggedright}p{#1}}
 \makeatother

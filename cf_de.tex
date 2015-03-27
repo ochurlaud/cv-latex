@@ -1,10 +1,10 @@
 \documentclass[skip,a4paper]{article}
 
+\include{include}	
+
 \def\subject{CV Olivier CHURLAUD}
 \def\title{CV Olivier CHURLAUD}
 \def\author{Olivier CHURLAUD}
-
-\include{include}	
 
 \makeatletter
 	\definecolor{redcv}{HTML}{C5000B}
@@ -16,11 +16,11 @@
 \makeatother
 
 \begin{document}
-	\fontsize{8.5}{9.5}
-	\selectfont
+\fontsize{8.5}{9.5}
+\selectfont
 
 \begin{minipage}[c]{\linewidth}
-	\begin{minipage}[c][4cm]{2.2cm}
+	\begin{minipage}[c][4cm]{2.6cm}
 		~\\~\\
 		\begin{tikzpicture}
 			\begin{scope}
@@ -32,9 +32,10 @@
 		~
 	\end{minipage}
 	\begin{minipage}[c][4cm]{5.5cm}
-		~~~\textbf{Olivier CHURLAUD}
-		\footnotesize
-		\begin{itemize}
+		\textbf{Olivier CHURLAUD}
+
+		\begin{itemize}[itemsep=0.5ex,leftmargin=3ex]
+			\footnotesize
 			\item[\bfseries @] \url{olivier@churlaud.com}
 			\item[\bfseries \color{blue} in] {\scriptsize\url{ fr.linkedin.com/in/olivierchurlaud/}}
 			\item[\Telefon]+33 (0)6 98 29 02 52
@@ -56,18 +57,22 @@
 		\vfill
 		
 		\centering
-		\LARGE
-		\'Eleve Ingénieur\\
-		Spécialité traitement du signal et de l'information
-\end{minipage}
+		{
+			\setlength{\parskip}{10pt plus 1pt minus 1pt}
+			{\LARGE \'Elève Ingénieur}
+			
+			{\Large Spécialité traitement du signal et de l'information}
+		}
+	\end{minipage}
 \end{minipage}
 
+\vfill
 \begin{minipage}{\linewidth}
 	~
 	\hfill
 	\begin{minipage}{\scale\linewidth}
+	~
 		\section*{\'Etudes}
-		
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
 			\itemcv{2014 -- 2016}{TU Berlin : Master Elektrotechnik}
 			\itemcv{2012 -- 2016}{École Centrale de Lyon : Préparation du diplôme d'ingénieur généraliste}
@@ -114,18 +119,19 @@
 				Emploi saisonnier : manutention dans une entreprise de déménagement (BIARDEAU SARL, à Niort)
 			}
 		\end{tabular}
-		
+
 		\section*{Compétences}
 		
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
 			\itemcv{Management}{Chef de projet, coordination d'équipes, lien entre administration et équipe}
 			\itemcv{Électronique}{Programmation de microcontrôleurs Microchip, cartes électroniques de communication WPAN/WLAN}
 			\itemcv{Informatique}{
+				Programmation, Machine Learning --
 				\textbf{Internet} HTML5, CSS, PHP, MySQL, Symfony2 -- \textbf{Administration système et réseaux} Linux, Bridging, VLAN, Virtualisation KVM, Apache2 -- \textbf{Programme} MS Access, MATLAB, C/C++, Python, \LaTeX
 			}
 			\itemcv{Langues}{
 				\textbf{Anglais} (Lu, écrit, parlé : TOEFL 613pts) \\
-				\textbf{Allemand} (Lu, écrit, parlé : Certificat de niveau B2 en allemand en 2014 {\small(Système de notation Européen)})
+				\textbf{Allemand} (Lu, écrit, parlé : Certificat de niveau B2 en allemand en 2014 {\scriptsize(Système de notation Européen)})
 			}
 		\end{tabular}
 		
@@ -138,5 +144,5 @@
 	\end{tabular}
 	\end{minipage}
 \end{minipage}
-
+\vfill
 \end{document}
