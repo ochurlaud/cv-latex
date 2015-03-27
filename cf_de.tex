@@ -157,11 +157,13 @@
 	\end{minipage}
 \end{minipage}
 \vfill
-\begin{minipage}[t][50pt]{150pt}
+\begin{minipage}[t]{150pt}
 	 \vspace{0pt}
 	 \place, den \today,
 \end{minipage}
-\begin{minipage}[t]{200pt}
-	 \vspace{0pt}\includegraphics[width=100pt]{img/signature.png}
-\end{minipage}
+\IfFileExists{img/signature.png}{
+	\begin{minipage}[t]{200pt}
+		 \vspace{0pt}\includegraphics[width=100pt]{img/signature.png}
+	\end{minipage}
+}{}
 \end{document}
