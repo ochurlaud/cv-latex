@@ -1,10 +1,13 @@
+% !TeX spellcheck = en_US
 \documentclass[skip,a4paper]{article}
 
-\include{include}	
+\usepackage[english]{babel}
 
 \def\subject{CV Olivier CHURLAUD}
 \def\title{CV Olivier CHURLAUD}
 \def\author{Olivier CHURLAUD}
+
+\include{include}	
 
 \makeatletter
 	\definecolor{redcv}{HTML}{C5000B}
@@ -23,26 +26,25 @@
 	\begin{minipage}[c][4cm]{2.6cm}
 		~\\~\\
 		\begin{tikzpicture}
-			\begin{scope}
-				\clip [rounded corners=.5cm] (0,0) rectangle coordinate (centerpoint) (2.4,3cm); 
-				\node [inner sep=0pt] at (centerpoint) {\includegraphics[width=2.4cm]{img/ID_ochurlaud}}; 
-			\end{scope}
+		\begin{scope}
+		\clip [rounded corners=.5cm] (0,0) rectangle coordinate (centerpoint) (2.4,3cm); 
+		\node [inner sep=0pt] at (centerpoint) {\includegraphics[width=2.4cm]{img/ID_ochurlaud}}; 
+		\end{scope}
 		\end{tikzpicture}
 		\vfill
 		~
 	\end{minipage}
 	\begin{minipage}[c][4cm]{5.5cm}
 		\textbf{Olivier CHURLAUD}
-
+		
 		\begin{itemize}[itemsep=0.5ex,leftmargin=3ex]
 			\footnotesize
 			\item[\bfseries @] \url{olivier@churlaud.com}
 			\item[\bfseries \color{blue} in] {\scriptsize\url{ fr.linkedin.com/in/olivierchurlaud/}}
-			\item[\Telefon]+33 (0)6 98 29 02 52
+			\item[\Telefon] +49 (0)157 52931348
 			\item[\Letter] 12, place du grand four \\
 			79 370 MOUGON \\ 
 			FRANCE
-			\item[$\bullet$] né le 07 avril 1992
 		\end{itemize}
 	\end{minipage}
 	\begin{minipage}[c][4cm]{10cm}
@@ -59,9 +61,9 @@
 		\centering
 		{
 			\setlength{\parskip}{10pt plus 1pt minus 1pt}
-			{\LARGE \'Elève Ingénieur}
+			{\LARGE Engineer Student}
 			
-			{\Large Spécialité traitement du signal et de l'information}
+			{\Large Specialization Signal and Information processing}
 		}
 	\end{minipage}
 \end{minipage}
@@ -72,75 +74,80 @@
 	\hfill
 	\begin{minipage}{\scale\linewidth}
 	~
-		\section*{\'Etudes}
+		\section*{Education}
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{2014 -- 2016}{TU Berlin : Master Elektrotechnik}
-			\itemcv{2012 -- 2016}{École Centrale de Lyon : Préparation du diplôme d'ingénieur généraliste}
-			\itemcv{2010 -- 2012}{Classe préparatoire Maths-Physiques (MP) au Lycée Pierre de Fermat de Toulouse (31)}
+			\itemcv{2014 -- 2016}{\textbf{TU Berlin}: Master Degree Electrical Engineer}
+			\itemcv{2012 -- 2016}{\textbf{École Centrale de Lyon}: enrolled in a Engineering Degree}
+			\itemcv{2010 -- 2012}{\textbf{Elite undergrad program}: lycée Pierre de Fermat in Toulouse (31)\\ Preparation for the competitive entrance examinations to French engineering school
+				}
 		\end{tabular}
 		
-		\section*{Expériences}
-		\subsection*{Direction de projets}
-		
+		\section*{Experience}
+		\subsection*{Project Leader}
+		 
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
 			\itemcv{2013 -- 2014}{
-				\textbf{Projet de Recherche : Conception et création d'un module de transmission WPAN-WLAN} \\
-				Collaboration avec le laboratoire INL (Lyon) \\
-				\textit{Programmation C -- Conception KICAD -- Microcontrôleurs Microchip}
+				\textbf{Research: Design of a node connecting WPAN and WLAN networks} \\
+				Collaboration with the INL Laboratory (Lyon)\\
+				\textit{C Program -- KICAD -- Microcontrollers (Microchip)}
 			}
 			\itemcv{2012 -- 2013}{
-				\textbf{Président de l'association ECLAIR} (association loi 1901 gérant l'informatique et le réseau de l'École Centrale de Lyon : 700 utilisateurs) : Mise en place d'un Cloud, Conception d'un méta-site interne pour les élèves et anciens élèves
+				\textbf{President of the ECLAIR students association} (manages the network and IT for the students: more than 700 users) \\
+				Setup of a Cloud storage (based on ownCloud) -- Design of a meta-website for the students and alumni (Symfony2) -- Network administration
 			}
 			\itemcv{~}{
-				\textbf{Projet d’Étude : Création d'un outil de mesure des champs magnétiques de basse fréquence} \\
-				Collaboration avec le Laboratoire Ampère (Lyon) \\
-				\textit{Programmation MATLAB -- Mise en œuvre d'un magnétomètre}
+				\textbf{Design of a tool to measure extremely low frequency magnetic fields} \\
+				Collaboration with the Amère Laboratory (Lyon) \\
+				\textit{MATLAB program -- Setup of a magnetometer on a chip}
 			}
 			\itemcv{2009 -- 2010}{
-				\textbf{Projet de recherche en physique des particules en partenariat avec le CERN et l'IN2P3} \\
-				Projet soutenu aux Olympiades de Physiques (1\ier prix), aux Faites de la Science (1\ier prix) \\
-				\textit{Expérimentations -- Vulgarisation -- Conception d'un jeu de plateau sur le thème du LHC}
+				\textbf{Research projct in particle physics with CERN and IN2P3} \\
+				Received first prize in two science competitions (Olympiades de Physique, Faites de la Science) \\
+				\textit{Particle physics -- Experiments -- Popularization -- Design of a board game on the LHC topic}
 			}
 			\itemcv{2008 -- 2009}{
-				\textbf{Projet d'Atelier d'écriture en partenariat avec l'OuLiPo} (Ouvroir de Littérature Potentielle : groupement	d'écrivains qui travaille en se choisissant des contraintes de fond et de forme)
+				\textbf{Writing workshop in partnership with OuLiPo} (Ouvroir de Littérature Potentielle: group of french writers who work by choosing style and content constraints)
 			}
 		\end{tabular}
 		
-		\subsection*{Expériences professionnelles}
-		
+		\subsection*{Work Experience}
+				 
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
 			\itemcv{2014}{
-				\textbf{Stage d'application : Télécom Bretagne, avec F.P. Andriulli} -- Analyse et développement de techniques et d'outils	expérimentaux et computationnels pour l'imagerie cérébrale par encéphalogramme
+				\textbf{Research internship with Francesco \textit{P. Andriulli} (Télécom Bretagne)}\\
+				Analysis and design of technics and tools for experiments and computation on EEG material
 			}
 			\itemcv{2013}{
-				Stage ouvrier : \textbf{SNCF} - maintenance de locomotives BB26000 (Technicentre SNCF Oullins)
+				\textbf{Industry internship: SNCF} -- Maintenance of BB26000 engines (Technicentre SNCF Oullins)
 			}
-			\itemcv{2010 et 2011}{
-				Emploi saisonnier : manutention dans une entreprise de déménagement (BIARDEAU SARL, à Niort)
+			\itemcv{2010 and 2011}{
+				\textbf{Seasonal work} -- Handling in a moving firm (BIARDEAU SARL, in Niort, 79)
 			}
 		\end{tabular}
 
-		\section*{Compétences}
+		\section*{Professional expertise}
 		
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{Management}{Chef de projet, coordination d'équipes, lien entre administration et équipe}
-			\itemcv{Électronique}{Programmation de microcontrôleurs Microchip, cartes électroniques de communication WPAN/WLAN}
-			\itemcv{Informatique}{
-				Programmation, Machine Learning --
-				\textbf{Internet} HTML5, CSS, PHP, MySQL, Symfony2 -- \textbf{Administration système et réseaux} Linux, Bridging, VLAN, Virtualisation KVM, Apache2 -- \textbf{Programme} MS Access, MATLAB, C/C++, Python, \LaTeX
+			\itemcv{Management}{Head of project, team coordination, relation with administration}
+			\itemcv{Science}{Signal processing, Filter design, Electromagnetism, Mathematics, Channel and Source coding}
+			\itemcv{Computer Science}{
+				Programmation, Machine Learning -- \textbf{System and Network administration} Linux, Bridging, VLAN, Virtualization KVM, Apache2 -- \textbf{Program} MATLAB, C/C++, MySQL, \LaTeX
 			}
-			\itemcv{Langues}{
-				\textbf{Anglais} (Lu, écrit, parlé : TOEFL 613pts) \\
-				\textbf{Allemand} (Lu, écrit, parlé : Certificat de niveau B2 en allemand en 2014 {\scriptsize(Système de notation Européen)})
+			\itemcv{Languages}{
+				\textbf{English}: Fluent, TOEFL 613pts (B2/C1) \\
+				\textbf{German} Professional skills: B2 (European notation system), in Berlin for 8 months
 			}
 		\end{tabular}
 		
-		\section*{Centres d’intérêt}
+		\section*{Interest}
 		
 		\begin{tabular}{p{\datescale\linewidth} P{\descripscale\linewidth}}
-			\itemcv{Culturel}{Littérature : littérature classique du XIX-XXe siècle et Nouveau Roman}
-			\itemcv{~}{Musique, Cinéma : Cinéma d'auteur et des années 40-50}
-			\itemcv{Sport}{Sports de montagne : ski, escalade, randonnée}
+			\itemcv{General \mbox{knowledge}}{
+					Literature: Classics from the XIXth and XXth century, Nouveau Roman
+					
+					Music, Cinema:  French \textit{Cinéma d'auteur} and 40-50s american movies
+				}
+			\itemcv{Sport}{Mountain sports: Ski, rock climbing, hiking}
 	\end{tabular}
 	\end{minipage}
 \end{minipage}
